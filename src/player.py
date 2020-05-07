@@ -3,14 +3,16 @@
 
 
 class Player():
-    def __init__(self):
+    def __init__(self, name, location):
+        self.name = name
+        self.location = location
 
-    def move_to(direction, current_loc):
+    def dip(self, direction, current_loc):
         # try to move in the specified direction
         attribute = direction + '_to'
 
         # can we move in the specified location from our current location
-        if hasattr(currrent_loc, attribute):
+        if hasattr(current_loc, attribute):
             # get the room in the specified direction
             return getattr(current_loc, attribute)
 

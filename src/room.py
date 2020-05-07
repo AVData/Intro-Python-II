@@ -10,12 +10,21 @@
 #     def __str__(self):
 #         return f"{self.name}, {self.description}"
 
+
 class Room:
-    def __init__(self, name, subtext):
+    def __init__(self, name, description):
         self.name = name
-        self.subtext = subtext
+        # self.subtext = subtext
+        self.description = description
 
-    def __str_(self):
-        return f"{self.name}"
+    # def __str_(self):
+    #     return f"{self.name}"
+    #
+    # def print_description(self):
+    #     return f"{self.subtext}"
 
-        
+    def __str__(self):
+        return f"{self.name}, {self.description}"
+
+    def print_description(self):
+        return f"{self.description}"
