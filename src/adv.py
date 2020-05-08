@@ -5,10 +5,8 @@ import textwrap
 # Declare all the rooms
 
 room = {
-    'outside':  Room("Outside Cave Entrance",
-                     """
-                     North of you, the cave mount beckons
-                     """),
+    'outside':  Room("Outside Cave Entrance\n",
+                     """North of you, the cave mount beckons"""),
 
     'foyer':    Room("Foyer",
                      """
@@ -75,7 +73,9 @@ My code here:
 
 new_player = input('Your name, what is, young padawan? ')
 player = Player(new_player, room['outside'])
-print(player)
+
+# print agreeting with for the pllayer
+print(f"{player.name}, novice one, currently, you are ")
 
 done = False
 

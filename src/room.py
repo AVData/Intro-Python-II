@@ -24,7 +24,7 @@ class Room:
     #     return f"{self.subtext}"
 
     def __str__(self):
-        return f"{self.name}, {self.description}"
+        return f"{self.name}"
 
     def print_description(self):
         return f"{self.description}"
